@@ -47,6 +47,19 @@ public class CILabTest {
         assertFalse(myString.detectCapitalUse());
     }
 
+    @Test
+    public void detectCapitalUseTest6() {
+        myString.setString("DOGSAREAWESOMe");
+        assertFalse(myString.detectCapitalUse());
+    }
+
+    @Test
+    public void detectCapitalUseTest7() {
+        myString.setString("alllowercase");
+        assertTrue(myString.detectCapitalUse());
+    }
+
+
 
 
 }
